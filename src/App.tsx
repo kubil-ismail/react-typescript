@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'; 
+import Text from './Text';
 import './App.css';
 
-function App() {
+let array : object = {};
+enum anything { coks= 'red',  }
+
+const App: React.FC = () => {
+  // array = [{red: 'red'}];
+  // array = {red: 'one'}
+  // console.log(array)
+  console.log(anything)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Text body="Bilkis" handleChange={(e) => console.log(e)} />
+  )
 }
 
 export default App;
